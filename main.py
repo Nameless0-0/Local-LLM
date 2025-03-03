@@ -27,7 +27,7 @@ def get_response(query, chat_history, llm_model):
     """
     prompt = ChatPromptTemplate.from_template(template)
     model = OllamaLLM(model=llm_model)
-    
+    chain = prompt | model
 
     return chain.stream({"chat_history": chat_history, "question": query})
 
