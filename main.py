@@ -6,10 +6,9 @@ from langchain_core.messages import HumanMessage, AIMessage
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-llm_model = "llama3"
 
-
-st.set_page_config(page_title=llm_model)
+st.set_page_config(page_title="Local LLM")
+llm_model = st.selectbox("Choose your LLM model:", ["llama3", "deepseek-r1"])  # Add more options if needed
 st.title(llm_model)
 
 
@@ -53,7 +52,5 @@ if user_query is not None and user_query != "":
         ai_response = st.write_stream(get_response(user_query, st.session_state.chat_history, llm_model))
 
     st.session_state.chat_history.append(AIMessage(ai_response))
-
-
 
 
