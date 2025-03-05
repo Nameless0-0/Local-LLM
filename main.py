@@ -8,7 +8,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 if "model_list" not in st.session_state:
-    st.session_state.model_list = []  # Predefined model list
+    st.session_state.model_list = ["llama3", "deepseek-r1", "llama3.2-vision"]  # Predefined model list
 if "custom_model" not in st.session_state:  # To hold the custom model name
     st.session_state.custom_model = ''
 
