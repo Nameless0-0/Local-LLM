@@ -26,20 +26,10 @@ pip install streamlit langchain langchain-ollama
 git clone https://github.com/Nameless0-0/Local-LLM
 cd <repository-directory>
 ```
-
-Here's an updated version of your README with instructions on downloading the model using Ollama:
-
-## Getting Started
-
-- **1. Clone the repository**
-   ```bash
-   git clone https://github.com/Nameless0-0/Local-LLM
-   cd <repository-directory>
-   ```
 - **2. Download the Model**
-   ```bash
-   ollama pull llama3
-   ```
+```bash
+ollama pull llama3
+```
 
 - **3. Run the Application: Execute the following command in your terminal:**
 ```bash
