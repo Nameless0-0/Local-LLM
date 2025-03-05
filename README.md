@@ -1,4 +1,6 @@
 # Local-LLM
+![image](https://github.com/user-attachments/assets/a6cbe9a4-994f-4e42-a872-4aababfecd85)
+
 This is a Streamlit application that allows users to interact with various local language models (LLMs) using the Langchain library. The app provides a user-friendly interface to manage model selection, chat history, and user input.
 
 ## Requirements
