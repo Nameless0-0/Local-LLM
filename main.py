@@ -62,7 +62,7 @@ def add_chat():
         st.success(f"Model '{st.session_state.custom_model}' added.")
         st.success(f"Chat '{st.session_state.new_chat}' added and switched to.")
         st.session_state.new_chat = ''  # Clear the input box
-    elif new_chat_name in st.session_state.chat_histories:
+    elif st.session_state.new_chat in st.session_state.chat_histories:
         st.warning(f"Chat '{st.session_state.new_chat}' already exists.")
     else:
         st.warning("Please enter a valid chat name.")
