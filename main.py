@@ -46,6 +46,11 @@ if st.sidebar.button("Remove Selected Model"):
     else:
         st.warning("The selected model is not in the list.")
 
+with st.sidebar:
+    if st.button("Clear Chat History"):
+        st.session_state.chat_history = []
+        st.success("Chat history cleared!")
+
 # Determine the model to use
 model_to_use = llm_model
 if(model_to_use == None):

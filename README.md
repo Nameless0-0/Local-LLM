@@ -1,4 +1,5 @@
 # Local-LLM
+
 ![image](https://github.com/user-attachments/assets/a6cbe9a4-994f-4e42-a872-4aababfecd85)
 
 This is a Streamlit application that allows users to interact with various local language models (LLMs) using the Langchain library. The app provides a user-friendly interface to manage model selection, chat history, and user input.
@@ -25,12 +26,16 @@ pip install streamlit langchain langchain-ollama
 git clone https://github.com/Nameless0-0/Local-LLM
 cd <repository-directory>
 ```
+- **2. Download the Model**
+```bash
+ollama pull llama3
+```
 
-- **2. Run the Application: Execute the following command in your terminal:**
+- **3. Run the Application: Execute the following command in your terminal:**
 ```bash
 streamlit run main.py
 ```
-- **3. Open your web browser.**
+- **4. Open your web browser.**
 After running the command, a new tab should open in your default web browser displaying the chat application.
 
 ## Usage Instructions
